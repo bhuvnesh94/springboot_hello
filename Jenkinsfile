@@ -8,7 +8,7 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker build -t bhuvnesh94/springboot_hello:latest .'
+                sh 'sudo docker build -t bhuvnesh94/springboot_hello:latest .'
             }
         }
     }
