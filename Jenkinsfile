@@ -14,7 +14,7 @@ pipeline {
          stage('docker image run') {
             steps {
                 sh 'docker rm -f hello-world'
-                sh 'docker run -d --name=hello-world -p 8081:8080 bhuvnesh94/springboot_hello:latest'
+                sh 'docker-compose up -d'
             }
         }
     }
