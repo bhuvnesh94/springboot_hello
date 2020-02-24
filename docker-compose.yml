@@ -1,0 +1,7 @@
+version: '3'
+services:
+  springboot:
+    image: bhuvnesh94/springboot_hello:latest
+    container_name: springbootapp
+    ports:
+    - 8081:8080
