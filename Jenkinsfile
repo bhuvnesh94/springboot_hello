@@ -18,7 +18,7 @@ pipeline {
         }
          stage('None tag docker image delete') {
             steps {
-                sh 'docker rmi ${docker images | grep "none" | awk '{print $3}'}'
+                sh 'docker images | grep "none" | awk '{print $3}''
             }
         }
     }
