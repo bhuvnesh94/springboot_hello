@@ -16,10 +16,10 @@ pipeline {
                 sh 'docker-compose up -d'
             }
         }
-         stage('None tag docker image delete') {
-            steps {
-                sh 'docker images | grep "none" | awk '{print $3}''
-            }
+#         stage('None tag docker image delete') {
+#            steps {
+#                sh 'docker images | grep "none" | awk '{print $3}''
+#            }
         }
     }
 }
