@@ -13,7 +13,6 @@ pipeline {
         }
          stage('docker image run') {
             steps {
-                sh 'docker rm -f hello-world'
                 sh 'docker-compose up -d'
             }
         }
