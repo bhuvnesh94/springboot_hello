@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn install'
+                sh 'sudo mvn install'
             }
         }
         stage('docker image build') {
